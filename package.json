@@ -1,0 +1,31 @@
+{
+	"name": "react-basic",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "pnpm swc app.jsx -o app.js && pnpm esbuild --bundle app.js --outfile=bundle.js --loader:.js=jsx",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devEngines": {
+		"packageManager": {
+			"name": "pnpm",
+			"version": "12.5.1",
+			"onFail": "download"
+		}
+	},
+	"packageManager": "pnpm@12.5.1",
+	"type": "module",
+	"dependencies": {
+		"@swc/cli": "^0.8.1",
+		"@swc/core": "^1.16.2",
+		"@types/react": "^19.3.0",
+		"@types/react-dom": "^19.3.0",
+		"esbuild": "^0.28.2",
+		"react": "^19.3.0",
+		"react-dom": "^19.3.0"
+	}
+}
